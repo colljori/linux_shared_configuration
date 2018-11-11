@@ -1,0 +1,20 @@
+'atom-workspace atom-text-editor':
+  # Unset editor keybindings (conflict with multi-cursor-plus)
+  'alt-left':        'unset!'
+  'alt-right':       'unset!'
+  'alt-up':          'unset!'
+  'alt-down':        'unset!'
+
+'atom-workspace':
+  # Key bindings for multi-cursor-plus
+  'alt-x':                'multi-cursor-plus:mark'
+  'alt-up':               'multi-cursor-plus:move-up'
+  'alt-down':             'multi-cursor-plus:move-down'
+  'alt-left':             'multi-cursor-plus:move-left'
+  'alt-right':            'multi-cursor-plus:move-right'
+
+
+'.platform-linux atom-text-editor':
+  # Key bindings for tags navigation
+  'ctrl-cmd-right':    'atom-ctags:go-to-declaration'
+  'ctrl-cmd-left':     'atom-ctags:return-from-declaration'
