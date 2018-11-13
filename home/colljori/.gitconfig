@@ -1,0 +1,6 @@
+[user]
+	email = joris.collomb@gmail.com
+	name = Joris
+[core]
+	autocrlf = input
+	editor = vim
