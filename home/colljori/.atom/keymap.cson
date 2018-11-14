@@ -1,3 +1,18 @@
+'body':
+  'ctrl-q':               'unset!'
+  'ctrl-a':               'unset!'
+  "ctrl-a ctrl-k":        "pane:split-up-and-copy-active-item",
+  "ctrl-a ctrl-j":        "pane:split-down-and-copy-active-item",
+  "ctrl-a ctrl-h":        "pane:split-left-and-copy-active-item",
+  "ctrl-a ctrl-l":        "pane:split-right-and-copy-active-item",
+  "ctrl-a x":             "pane:close",
+  "ctrl-a ctrl-p":        "window:focus-previous-pane",
+  "ctrl-a ctrl-n":        "window:focus-next-pane",
+  "ctrl-a k":             "window:focus-pane-above",
+  "ctrl-a j":             "window:focus-pane-below",
+  "ctrl-a h":             "window:focus-pane-on-left",
+  "ctrl-a l":             "window:focus-pane-on-right"
+
 'atom-workspace atom-text-editor':
   # Unset editor keybindings (conflict with multi-cursor-plus)
   'alt-left':        'unset!'
