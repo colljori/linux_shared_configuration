@@ -1,17 +1,22 @@
 'body':
   'ctrl-q':               'unset!'
   'ctrl-a':               'unset!'
-  "ctrl-a ctrl-k":        "pane:split-up-and-copy-active-item",
-  "ctrl-a ctrl-j":        "pane:split-down-and-copy-active-item",
-  "ctrl-a ctrl-h":        "pane:split-left-and-copy-active-item",
-  "ctrl-a ctrl-l":        "pane:split-right-and-copy-active-item",
-  "ctrl-a x":             "pane:close",
-  "ctrl-a ctrl-p":        "window:focus-previous-pane",
-  "ctrl-a ctrl-n":        "window:focus-next-pane",
+  'ctrl-a ctrl-a':        "tree-view:toggle-focus"
+  "ctrl-a ctrl-k":        "pane:split-up-and-move-active-item",
+  "ctrl-a ctrl-j":        "pane:split-down-and-move-active-item",
+  "ctrl-a ctrl-h":        "pane:split-left-and-move-active-item",
+  "ctrl-a ctrl-l":        "pane:split-right-and-move-active-item",
+  "ctrl-a ctrl-shift-k":  "window:move-active-item-to-pane-above",
+  "ctrl-a ctrl-shift-j":  "window:move-active-item-to-pane-below",
+  "ctrl-a ctrl-shift-h":  "window:move-active-item-to-pane-on-left",
+  "ctrl-a ctrl-shift-l":  "window:move-active-item-to-pane-on-right",
   "ctrl-a k":             "window:focus-pane-above",
   "ctrl-a j":             "window:focus-pane-below",
   "ctrl-a h":             "window:focus-pane-on-left",
-  "ctrl-a l":             "window:focus-pane-on-right"
+  "ctrl-a l":             "window:focus-pane-on-right",
+  "ctrl-a x":             "tabs:close-tab",
+  "ctrl-a p":             "pane:show-previous-item",
+  "ctrl-a n":             "pane:show-next-item"
 
 'atom-workspace atom-text-editor':
   # Unset editor keybindings (conflict with multi-cursor-plus)
@@ -33,3 +38,5 @@
   # Key bindings for tags navigation
   'ctrl-cmd-right':    'atom-ctags:go-to-declaration'
   'ctrl-cmd-left':     'atom-ctags:return-from-declaration'
+  'ctrl-cmd-j':        'atom-ctags:go-to-declaration'
+  'ctrl-cmd-k':        'atom-ctags:return-from-declaration'

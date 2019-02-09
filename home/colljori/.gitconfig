@@ -4,3 +4,7 @@
 [core]
 	autocrlf = input
 	editor = vim
+[alias]
+	l = log --decorate=short --graph --oneline --exclude=*/old/*
+	la = log --decorate=short --graph --oneline --exclude=*/old/* --all
+	lo = log --decorate=short --graph --oneline --all
